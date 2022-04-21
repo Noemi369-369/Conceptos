@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Conceptos.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Conceptos.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">org.adaitw.conceptos.entity</span><span class="s0">;</span>
+
+
+<span class="s0">import </span><span class="s1">lombok.AllArgsConstructor</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">lombok.Getter</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">lombok.NoArgsConstructor</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">lombok.Setter</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">javax.persistence.*</span><span class="s0">;</span>
+
+
+<span class="s1">@Entity</span>
+<span class="s1">@Table( name= </span><span class="s2">&quot;Conceptos&quot;</span><span class="s1">)</span>
+<span class="s1">@AllArgsConstructor</span>
+<span class="s1">@NoArgsConstructor</span>
+<span class="s1">@Getter</span>
+<span class="s1">@Setter</span>
+
+
+<span class="s0">public class </span><span class="s1">Conceptos </span><span class="s0">extends <a href="Base.java.html">Base</a> </span><span class="s1">{</span>
+
+    <span class="s1">@Column(name=</span><span class="s2">&quot;nombre_concepto&quot;</span><span class="s1">)</span>
+        <span class="s0">private </span><span class="s1">String  nombre_concepto</span><span class="s0">;</span>
+    <span class="s1">@Column( name= </span><span class="s2">&quot;numero_concepto&quot;</span><span class="s1">)</span>
+    <span class="s0">private int </span><span class="s1">numero_concepto</span><span class="s0">;</span>
+    <span class="s1">@Column(name= </span><span class="s2">&quot;contenido_concepto&quot;</span><span class="s1">)</span>
+    <span class="s0">private </span><span class="s1">String contenido_concepto</span><span class="s0">;</span>
+
+
+    <span class="s0">public </span><span class="s1">String getNombre_concepto() {</span>
+        <span class="s0">return </span><span class="s1">nombre_concepto</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
